@@ -14,10 +14,14 @@ int main(){
 
     switch (tar)
     {
-    case 1:
+    case "obrero":
         des=15%
         break;
     
+    case 2:
+        des=15%
+        break;
+
     default:
         break;
     }
