@@ -79,7 +79,7 @@ int main(){
     fal=((337+n)-(dia+d));
 
 
-    cout<<"\nLa fecha actual es: "<<+dia+mes+anio<<" y falta "<<+fal<<"dias para finalizar el año";
+    cout<<"\nLa fecha actual es: "<<+dia+mes+anio<<" y falta "<<+fal<<" dias para finalizar el año";
 
     return 0;
 
