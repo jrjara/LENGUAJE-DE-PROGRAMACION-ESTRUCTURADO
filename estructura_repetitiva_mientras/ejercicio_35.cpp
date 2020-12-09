@@ -17,7 +17,7 @@ int main ()
    }
    
    
-    cout<<"El resultado es de: "<<result<<"digitos";
+    cout<<"El resultado es de: "<<result<<" digitos";
     
     return 0;
 }

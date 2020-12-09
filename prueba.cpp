@@ -1,19 +1,33 @@
+/*  Obtener la suma y la cantidad de los números divisibles por 3 y 5 a la vez, de los N primeros
+números naturales. */
+
 #include<iostream>
+#include<stdlib.h>
 using namespace std;
 
 int main ()
 {
-    int num, fac=1;
+    int i, num, mul3=0, mul5=0;
     
-    cout<<"\nIngresa el numero para calcular el factoriar: ";
+    cout<<"\nIngresa un numero: ";
     cin>>num;
     
-    fac=1;
-    while(num!=0){
-        fac=fac*num;
-        num--;
+    for (i=1 ; i <= num; i++)
+    {
+        do
+        {
+            if (i/5==0)
+            {
+                mul5=mul5+1;
+            }
+            
+        } while (/* condition */);
+        
     }
-    cout<<"El resultado de factorial es: "<<fac<<"\n";
     
+    cout<<"\n";
+    cout<<"El resultado es: "<<result<<"\n";
+    
+    system("pause");
     return 0;
 }
