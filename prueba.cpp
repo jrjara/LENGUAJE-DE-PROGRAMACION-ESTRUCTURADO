@@ -1,38 +1,23 @@
-/*  Obtener la suma y la cantidad de los números divisibles por 3 y 5 a la vez, de los N primeros
-números naturales. */
-
-/*
-    |---------------|-----------|-------------------
-    |Tarjeta \ Sexo | Hombres   | Mujeres   
-    |---------------|-----------|-------------------
-    | Obrero        |  15%      | 10%       
-    | Empleado      |  20%      | 15%
-    |               |           |
-    */
-
 #include<iostream>
-#include<string>
+#include<conio.h>
+
 using namespace std;
+
 int main(){
-    int num, cont=2;
-    bool primo=true;
-
-
-
+	int i, x,y,elv=1;
+	
+	cout<<"Ingrese el valor de x: ";cin>>x;
+	cout<<"Ingrese el valor de y: ";cin>>y;
+	
+    i=1;
+    while (i<=y)
+    {
+        elv=elv*x;
+    }
     
 
-    cout<<"Ingrese el monto total: ";
-    cin>>mdes;
-    cout<<"Ea masculino o femenino? (M/F): ";
-    cin>>tc;
-    cout<<"Ingrese la tarjeta si es Obrero o Empleado (O/E): ";
-    cin>>tarj;
-
-      
-
-    cout<<"\n";
-    cout<<r<<"Es: "<<m<<"\n";
-    cout<<"Total de descuento: "<<tp<<"\n";
-
-    return 0;
+	cout<<"\nEl resultado de la elevacion es: "<<elv;
+	
+	getch();
+	return 0;
 }
