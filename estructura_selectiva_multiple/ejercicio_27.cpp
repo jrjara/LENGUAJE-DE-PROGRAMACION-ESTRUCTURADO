@@ -1,5 +1,15 @@
 //Obtenga el nombre del estado civil según la siguiente tabla
 
+/*
+    |--------|--------------|
+    |Codigo  | Estado Civil |    
+    |--------|--------------|
+    | 0      |  Soltero     |       
+    | 1      |  Casado      | 
+    | 2      |  Divorciado  |
+    | 3      |  Viudo       |   
+    */
+
 #include<iostream>
 #include<string>
 using namespace std;

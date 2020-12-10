@@ -1,6 +1,15 @@
 /*  Obtener la suma y la cantidad de los números divisibles por 3 y 5 a la vez, de los N primeros
 números naturales. */
 
+/*
+    |---------------|-----------|-------------------
+    |Tarjeta \ Sexo | Hombres   | Mujeres   
+    |---------------|-----------|-------------------
+    | Obrero        |  15%      | 10%       
+    | Empleado      |  20%      | 15%
+    |               |           |
+    */
+
 #include<iostream>
 #include<string>
 using namespace std;
@@ -8,7 +17,7 @@ int main(){
     int num, cont=2;
     bool primo=true;
 
-    
+
 
     
 

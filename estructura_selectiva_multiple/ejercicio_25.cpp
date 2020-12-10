@@ -1,4 +1,13 @@
-//En una empresa se ha determinado la siguiente política de descuento
+//En una empresa se ha determinado la siguiente política de descuento:
+
+/*
+    |---------------|-----------|-------------------
+    |Tarjeta \ Sexo | Hombres   | Mujeres   
+    |---------------|-----------|-------------------
+    | Obrero        |  15%      | 10%       
+    | Empleado      |  20%      | 15%
+    |               |           |
+    */
 
 #include<iostream>
 #include<string>
