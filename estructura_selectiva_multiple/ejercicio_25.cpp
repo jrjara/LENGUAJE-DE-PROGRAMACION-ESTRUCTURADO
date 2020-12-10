@@ -4,32 +4,65 @@
 #include<string>
 using namespace std;
 int main(){
-    char sex, tar;
-    double pc, des, result="";
+    const float DES_H=0.15F;
+    const float DES_M=0.25F;
+    const float DES_H2=0.10F;
+    const float DES_M2=0.15F;
 
-    cout<<"Ingrese el operador sea: +, -, *, o /:\n";
-    cin>>sex;
-    cout<<"Ingrese el operador sea: +, -, *, o /:\n";
-    cin>>tar;
+    float mdes, m, tp;
+    char tc, tarj;
+    string r;
 
-    switch (tar)
+    
+
+    cout<<"Ingrese el monto total: ";
+    cin>>mdes;
+    cout<<"Ea masculino o femenino? (M/F): ";
+    cin>>tc;
+    cout<<"Ingrese la tarjeta si es Obrero o Empleado (O/E): ";
+    cin>>tarj;
+
+    switch (tc)
     {
-    case "obrero":
-        des=15%
+    case 'M':
+        if (tarj='O')
+        {
+            m=mdes*DES_H;
+            tp=mdes - m;
+            r="DESCUENTO 15%";
+
+        }
+        else
+        {
+            m=mdes*DES_H2;
+            tp=mdes + m;
+            r="DESCUENTO 10%";
+        }
         break;
     
-    case 2:
-        des=15%
+    case 'F':
+        if (tarj='E')
+        {
+            m=mdes*DES_M;
+            tp=mdes - m;
+            r="DESCUENTO 10%";
+
+        }
+        else
+        {
+            m=mdes*DES_M2;
+            tp=mdes + m;
+            r="DESCUENTO 15%";
+        }
         break;
 
     default:
         break;
-    }
-
+    }   
 
     cout<<"\n";
-    cout<<"El resultado es: "<<result<<"\n";
-    
+    cout<<r<<"Es: "<<m<<"\n";
+    cout<<"Total de descuento: "<<tp<<"\n";
 
     return 0;
 }

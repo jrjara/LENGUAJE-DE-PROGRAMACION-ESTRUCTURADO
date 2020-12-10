@@ -15,38 +15,41 @@ int main(){
     cout<<"Ingrese el numero: ";
     cin>>p;
 
-    if (sexo=='M')
+    switch (sexo)
     {
-            if (p>=18 && p<=35)
-            {
-                result="AREQUIPA";
-            }
-            else if (p>=36 && p<=75)
-            {
-                result="CUSCO";
-            }
-            else if (p>=76 )
-            {
-                result="IQUITOS";
-            }
-        
-        
-    }
-    else if (sexo=='F')
+    case 'M':
+        if (p>=18 && p<=35)
         {
-            if (p>=18 && p<=35)
-            {
-                result="AREQUIPA";
-            }
-            else if (p>=36 && p<=75)
-            {
-                result="CUSCO";
-            }
-            else if (p>=76 )
-            {
-                result="IQUITOS";
-            }
-        }   
+            result="AREQUIPA";
+        }
+        else if (p>=36 && p<=75)
+        {
+            result="CUSCO";
+        }
+        else if (p>=76 )
+        {
+            result="IQUITOS";
+        }
+        break;
+    
+    case 'F':
+        if (p>=18 && p<=35)
+        {
+            result="AREQUIPA";
+        }
+        else if (p>=36 && p<=75)
+        {
+            result="CUSCO";
+        }
+        else if (p>=76 )
+        {
+            result="IQUITOS";
+        }
+        break;
+        
+    default:
+        break;
+    }   
 
     cout<<"\n";
     cout<<"Es: "<<result<<"\n";
