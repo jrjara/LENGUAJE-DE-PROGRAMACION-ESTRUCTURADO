@@ -1,0 +1,1 @@
+// lngrese 6 números y determine cuantos números repetidos existen.

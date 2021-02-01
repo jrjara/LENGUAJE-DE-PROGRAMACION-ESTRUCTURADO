@@ -1,23 +1,27 @@
-#include<iostream>
-#include<conio.h>
+/* Dado un frase devuelva la frase con asteriscos en lugar de espacios en blancos */
+#include <stdio.h>
+#include <stdlib.h>
 
-using namespace std;
+using namespace std ;
 
-int main(){
-	int i, x,y,elv=1;
-	
-	cout<<"Ingrese el valor de x: ";cin>>x;
-	cout<<"Ingrese el valor de y: ";cin>>y;
-	
-    i=1;
-    while (i<=y)
+int main()
+{
+    int sum=0,x;
+    char frase[50];
+     
+    cout<<"Introduzca una frase: ";
+    gets(frase);
+     
+    for(x = 0; x < 50;x++)
     {
-        elv=elv*x;
+      if (frase[x]!='\0')
+      {
+       frase[x]=frase[x]+3;
+      }
     }
-    
-
-	cout<<"\nEl resultado de la elevacion es: "<<elv;
-	
-	getch();
-	return 0;
+     
+    printf("\nLa nueva frase de longitud %d es:\n",sum);
+    printf("\n%s",frase);
+         
+    return 0;
 }
